@@ -12,7 +12,9 @@ interface Props {
 function TodoList({ todos, setToDos }: Props) {
     return (
         <div className="todos">
-
+          {
+           todos.map((todo)=> <div key={todo.id}>{todo.id}</div>)
+          }
         </div>
     );
 }
