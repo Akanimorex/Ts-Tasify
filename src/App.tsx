@@ -20,6 +20,10 @@ const  App:React.FC = () => {
       setToDo("")
     }
 
+  };
+
+  const handleDel = ()=>{
+    
   }
   console.log(todo);
   console.log(todos, "TODOS");
