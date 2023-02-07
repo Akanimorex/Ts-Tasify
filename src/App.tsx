@@ -22,9 +22,7 @@ const  App:React.FC = () => {
 
   };
 
-  const handleDel = ()=>{
-
-  }
+ 
  
   return (
     <div className="App">
