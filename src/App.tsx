@@ -23,10 +23,9 @@ const  App:React.FC = () => {
   };
 
   const handleDel = ()=>{
-    
+
   }
-  console.log(todo);
-  console.log(todos, "TODOS");
+ 
   return (
     <div className="App">
       <span className='heading'>Taskify</span>
