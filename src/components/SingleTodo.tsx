@@ -14,20 +14,11 @@ type Props = {
 const SingleTodo = ({ todo, todos, setToDos }: Props) => {
 
     const handleDone = (id: number) => {
-      console.log("hello")
-        // console.log(id, "strike");
-        // console.log(todo.id, "todos id");
-        // for (let i=0;i<todos.length; i++){
-        //     if(todos[i].id === id){
-        //         console.log("it is true")
-        //     } else {console.log("false")}
-        // }
        setToDos( todos.map(((todo) =>
             todo.id === id ? { ...todo, isDone:!todo.isDone } : todo
-            // todo.id === id ? console.log("true") : console.log("false")
             )));
             
-            // console.log(todo.isDone,"boolean");
+           
     
     }
     return (
