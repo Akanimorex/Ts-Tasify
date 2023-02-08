@@ -15,8 +15,14 @@ const InputField: React.FC<Props> = ({todo, setToDo, handleAdd}) => {
   return (
     <form className='input' 
     onSubmit={ (e)=>{
-      handleAdd(e)
-      inputRef.current?.blur()
+      if(todo ===""){
+        e.preventDefault();
+        return null
+      }else {
+        handleAdd(e)
+        inputRef.current?.blur()
+
+      }
 
     }
     }
